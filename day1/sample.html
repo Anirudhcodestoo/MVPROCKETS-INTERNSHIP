@@ -1,0 +1,132 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pain Points</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(230, 230, 230);
+        color:black;
+       
+      }
+      .header{
+        text-align: center;
+        color:black;
+        font-weight: bold;
+        font-size: 40px;
+      }
+      .main{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding:40px;
+          background: radial-gradient(
+   circle at 45% center,
+  /* First (inner) ring */
+  transparent 0px,
+  transparent 100px,              
+  rgba(200,200,200,0.25) 100px,    
+  rgba(200,200,200,0.25) 140px,    
+  transparent 140px,               
+
+  /* Second (outer) ring */
+  transparent 240px,
+  rgba(200,200,200,0.15) 240px,    
+  rgba(200,200,200,0.15) 300px,    
+  transparent 300px
+);
+
+
+
+      }
+      .phone{
+       flex:1;
+       display: flex;
+        justify-content: center;
+      }
+      .phone img{
+        max-width: 250px;
+        border-radius:10px;
+        box-shadow: 0px 0px 6px grey;
+
+      }
+      
+      .content{
+        background-color: rgb(220,220,220);
+        flex:1;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        row-gap: 10px;      
+        column-gap: 60px;
+        padding-left: 20px;
+        
+      } 
+      .point {
+        text-align: center;
+
+    }
+      .point .number{
+        height:40px;
+        width:40px;
+        font-weight: bold;
+        color: blue;
+        border-width:1px;
+        border-style:solid;
+        border-color:blue;
+        border-radius:50%;
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right:auto;
+        margin-bottom:30px;
+       
+      }
+      .point h2{
+        color:blue;
+      }
+      
+    </style>    
+  </head>
+  <body>
+    <div class="header"> Pain Points </div>
+    <!--1st section -->
+
+    <!-- seocond section then again divided into 2 sections -->
+    <div class= "main">    
+        <!-- phone seciton-->
+    <div class="phone">
+        <img src="iphone.jpg" alt="failed to load"> 
+    </div>
+
+       <!-- pain points section -->
+       
+        <div class="content">
+            <div class="point">
+                <div class="number">1</div>
+                <h2>Pain point 1</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, minus.</p>
+            </div>
+        
+        <div class="point">
+            <div class = "number"> 2</div>
+            <h2>Pain point 2</h2>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, aspernatur?</p>
+        </div>
+        <div class="point">
+        <div class="number">3</div>
+        <h2>Pain point 3</h2>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, vel.</p>
+        </div>
+
+
+        <div class="point">
+        <div class="number">4</div>
+        <h2>Pain point 4</h2>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, vel.</p>
+        </div>
+       
+  </body>
+</html>

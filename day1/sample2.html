@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pain Points</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        color: #333;
+      }
+
+      /* Top Heading Section */
+      .header {
+        text-align: center;
+        padding: 30px 0;
+        font-size: 32px;
+        font-weight: bold;
+        color: #0a74da;
+      }
+
+      /* Main Row (phone + content) */
+      .main {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 40px;
+      }
+
+      /* Left: phone */
+      .phone {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+
+      .phone img {
+        max-width: 250px;
+        border-radius: 30px;
+        box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Right: content */
+      .content {
+        flex: 2;
+        padding: 20px 40px;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px 60px;
+      }
+
+      .point {
+        text-align: center;
+        color: blue;
+      }
+
+      .point .number {
+        width: 40px;
+        height: 40px;
+        border: 2px solid #0a74da;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 15px;
+        font-weight: bold;
+        color: #0a74da;
+        font-size: 16px;
+      }
+
+      .point h3 {
+        color: #0a74da;
+        margin-bottom: 12px;
+        font-size: 18px;
+      }
+
+      .point p {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #555;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Top Heading -->
+    <div class="header">Pain Points</div>
+
+    <!-- Row: phone left, content right -->
+    <div class="main">
+      <!-- Phone mockup -->
+      <div class="phone">
+        <img src="https://i.ibb.co/5nZC0vH/phone-mockup.png" alt="Phone" />
+      </div>
+
+      <!-- Pain points content -->
+      <div class="content">
+        <div class="grid">
+          <div class="point">
+            <div class="number">1</div>
+            <h3>Pain point 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="point">
+            <div class="number">2</div>
+            <h3>Pain point 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="point">
+            <div class="number">3</div>
+            <h3>Pain point 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="point">
+            <div class="number">4</div>
+            <h3>Pain point 4</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
