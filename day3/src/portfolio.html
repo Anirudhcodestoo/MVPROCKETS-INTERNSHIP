@@ -1,0 +1,187 @@
+<!-- <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="bg-gray-100 min-h-screen">
+    <div class="flex justify-between items-center max-w-6xl mx-auto">
+      <h1 class="text-xl font-bold">John</h1>
+      <div class="hidden sm:flex space-x-6">
+        <a href="#" class="text-gray-500 hover:text-gray-800">Works</a>
+        <a href="#" class="text-gray-500 hover:text-gray-800">Blog</a>
+        <a href="#" class="text-gray-500 hover:text-gray-800">Contact</a>
+      </div>
+      <div class="sm:hidden">
+        <button class=" text-gray-600">☰</button>
+      </div>
+    </div>
+
+
+
+
+    
+  </body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white text-gray-900">
+    <!-- Navbar -->
+    <header
+      class="flex justify-between items-center max-w-6xl mx-auto py-6 px-4"
+    >
+      <h1 class="text-xl font-bold">John</h1>
+      <nav class="hidden md:flex space-x-8">
+        <a href="#" class="hover:text-blue-500">Works</a>
+        <a href="#" class="hover:text-blue-500">Blog</a>
+        <a href="#" class="hover:text-blue-500">Contact</a>
+      </nav>
+      <button class="md:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+    </header>
+
+    <section
+      class="max-w-6xl mx-auto flex flex-col md:flex-row items-center md:items-start gap-8 px-4 py-10"
+    >
+      <div class="flex-1">
+        <h2 class="text-3xl md:text-4xl font-bold">
+          Hi, I am John,<br />
+          Creative Technologist
+        </h2>
+        <p class="text-gray-600 mt-4">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint.
+        </p>
+        <button
+          class="bg-red-500 text-white px-6 py-2 rounded mt-6 hover:bg-red-600"
+        >
+          Download Resume
+        </button>
+      </div>
+      <img
+        src="profile.png"
+        alt="Profile"
+        class="w-40 h-40 rounded-full object-cover"
+      />
+    </section>
+
+    <!-- Recent Posts -->
+    <section class="bg-blue-50 py-10 px-4">
+      <div class="max-w-6xl mx-auto flex justify-between items-center mb-6">
+        <h3 class="text-xl font-semibold">Recent posts</h3>
+        <a href="#" class="text-blue-500">View all</a>
+      </div>
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-6">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h4 class="font-bold text-lg">Making a design system from scratch</h4>
+          <p class="text-sm text-gray-500 mt-2">
+            12 Feb 2020 | Design, Pattern
+          </p>
+          <p class="mt-4 text-gray-600">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor...
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h4 class="font-bold text-lg">
+            Creating pixel perfect icons in Figma
+          </h4>
+          <p class="text-sm text-gray-500 mt-2">
+            12 Feb 2020 | Figma, Icon Design
+          </p>
+          <p class="mt-4 text-gray-600">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor...
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Works -->
+    <section class="max-w-6xl mx-auto py-10 px-4">
+      <h3 class="text-xl font-semibold mb-6">Featured works</h3>
+      <div class="space-y-10">
+        <!-- Work 1 -->
+        <div class="flex flex-col md:flex-row gap-6">
+          <img
+            src="dashboard.png"
+            alt="Designing Dashboards"
+            class="w-full md:w-60 h-40 object-cover rounded-lg"
+          />
+          <div>
+            <h4 class="text-2xl font-bold">Designing Dashboards</h4>
+            <p class="text-sm text-gray-500 mt-2">2020 | Dashboard</p>
+            <p class="mt-4 text-gray-600">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor...
+            </p>
+          </div>
+        </div>
+
+        <!-- Work 2 -->
+        <div class="flex flex-col md:flex-row gap-6">
+          <img
+            src="vibrant.png"
+            alt="Vibrant Portraits"
+            class="w-full md:w-60 h-40 object-cover rounded-lg"
+          />
+          <div>
+            <h4 class="text-2xl font-bold">Vibrant Portraits of 2020</h4>
+            <p class="text-sm text-gray-500 mt-2">2018 | Illustration</p>
+            <p class="mt-4 text-gray-600">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor...
+            </p>
+          </div>
+        </div>
+
+        <!-- Work 3 -->
+        <div class="flex flex-col md:flex-row gap-6">
+          <img
+            src="malyalam.png"
+            alt="Malayalam type"
+            class="w-full md:w-60 h-40 object-cover rounded-lg"
+          />
+          <div>
+            <h4 class="text-2xl font-bold">36 Days of Malayalam type</h4>
+            <p class="text-sm text-gray-500 mt-2">2018 | Typography</p>
+            <p class="mt-4 text-gray-600">
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor...
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-6 mt-10">
+      <div class="max-w-6xl mx-auto flex flex-col items-center space-y-4">
+        <div class="flex space-x-6 text-gray-600">
+          <a href="#"><i class="fab fa-facebook"></i>FB</a>
+          <a href="#">TW</a>
+          <a href="#">IN</a>
+          <a href="#">LinkedIn</a>
+        </div>
+        <p class="text-gray-500">&copy; Copyright 2020 All rights reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
