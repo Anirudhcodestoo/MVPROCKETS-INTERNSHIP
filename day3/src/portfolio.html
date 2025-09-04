@@ -20,7 +20,6 @@
 
 
 
-
     
   </body>
 </html> -->
@@ -36,7 +35,7 @@
   <body class="bg-white text-gray-900">
     <!-- Navbar -->
     <header
-      class="flex justify-between items-center max-w-6xl mx-auto py-6 px-4"
+      class="relative flex justify-between items-center max-w-6xl mx-auto py-6 px-4"
     >
       <h1 class="text-xl font-bold">John</h1>
       <nav class="hidden md:flex space-x-8">
@@ -44,7 +43,7 @@
         <a href="#" class="hover:text-blue-500">Blog</a>
         <a href="#" class="hover:text-blue-500">Contact</a>
       </nav>
-      <button class="md:hidden">
+      <button id="menuBtn" class="md:hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           class="h-6 w-6"
@@ -60,6 +59,23 @@
           />
         </svg>
       </button>
+      <!-- Mobile menu (hidden by default) -->
+      <nav
+        id="mobileMenu"
+        class="absolute right-4 top-full mt-2 w-40 rounded-lg border bg-white shadow-md md:hidden hidden"
+      >
+        <ul class="py-2">
+          <li>
+            <a class="block px-4 py-2 hover:bg-gray-100" href="#">Works</a>
+          </li>
+          <li>
+            <a class="block px-4 py-2 hover:bg-gray-100" href="#">Blog</a>
+          </li>
+          <li>
+            <a class="block px-4 py-2 hover:bg-gray-100" href="#">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <section
@@ -181,6 +197,23 @@
           <a href="#">LinkedIn</a>
         </div>
         <p class="text-gray-500">&copy; Copyright 2020 All rights reserved</p>
+        <script>
+          const btn = document.getElementById("menuBtn");
+          const menu = document.getElementById("mobileMenu");
+
+          // Toggle menu when button is clicked
+          btn.addEventListener("click", (e) => {
+            e.stopPropagation();
+            menu.classList.toggle("hidden");
+          });
+
+          // Hide menu when clicking outside
+          document.addEventListener("click", (e) => {
+            if (!menu.contains(e.target) && !btn.contains(e.target)) {
+              menu.classList.add("hidden");
+            }
+          });
+        </script>
       </div>
     </footer>
   </body>
